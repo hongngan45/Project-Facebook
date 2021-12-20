@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@200;400&family=Fira+Sans:ital,wght@0,300;1,400&family=Inter:wght@300&family=Nunito+Sans:wght@300&family=Open+Sans+Condensed:wght@300&family=Oswald:wght@300&family=Playfair+Display:ital,wght@1,700;1,800&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@200;400&family=Fira+Sans:ital,wght@0,300;1,400&family=Inter:wght@300&family=Nunito+Sans:wght@300&family=Open+Sans+Condensed:wght@300&family=Oswald:wght@300&family=PT+Sans+Narrow&family=Playfair+Display:ital,wght@1,700;1,800&family=Roboto&display=swap');
+
+#container{
+	margin: 0;
+	padding: 0;
+}
+.upperpart-container {
+	background-color: #f0f2f5;
+	display: flex;
+	width: 100%;
+	height: 670px;
+	margin: 0;
+	padding: 60px;
+
+}
+.upperpart-container .left-group{
+	float: left;
+	width: 496px;
+	margin: 150px;
+}
+
+img{
+	border: 0;
+}
+#container .upperpart-container .left-group .logo-img-fb{
+	height: 120px;
+	margin: -25px;
+}
+
+#container .upperpart-container .left-group .upper-text{
+	color: black;
+	font-size: 30px;
+	line-height: 24px;
+	font-weight: bolder;
+	margin-top: 10px;
+    font-family: 'Fira Sans', sans-serif;
+    line-height: 1.2;
+
+   
+}
+
+.upperpart-container .right-group{
+	float: right;
+	width: 633px;
+	margin-top: 90px;
+	margin-left: 20px;
+	margin-right: 40px;
+}
+
+/*right-group*/
+.right-group{
+	width: 500px;
+	height: 400px;
+	display: block;
+
+}
+.right-group .login{
+	align-items: center;
+	background-color: #ffffff;
+	border: none;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+	box-sizing: border-box;
+	
+	padding: 20px 0 28px;
+	width: 430px;
+	height: 400px;
+}
+.right-group .login .inputTxt
+{  
+	font-size: 17px;
+	width: 360px;
+	height: 32px;
+	display: inline-block;
+	margin-left: 20px;
+	padding: 12px 14px;
+	border: 1px solid #dddfe2;
+	border-radius: 6px;
+	color: #ffffff;
+}
+
+.right-group .login .inputPass{
+	
+	font-size: 17px;
+	width: 360px;
+	height: 32px;
+	display: inline-block;
+	margin-left: 20px;
+	margin-top: 20px;
+	padding: 12px 14px;
+	border: 1px solid #dddfe2;
+	border-radius: 6px;
+	color: #ffffff;
+	vertical-align: middle;
+}
+.right-group .login .btn-signin{
+	position: relative;
+	text-align: center;
+	border: 1px solid #dddfe2;
+	border-radius: 6px;
+	background-color: #1877f2;
+	width: 390px;
+	height: 55px;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+.right-group .login .btn-signin:hover{
+	cursor: pointer;
+	background-color: #4876FF;
+
+}
+ .right-group .login .btn-signin{
+	font-size: 20px;
+	color: white;
+}
+.right-group .login .forget-pass{
+	text-align: center;
+	display: block;
+	margin-top: 20px;
+}
+.right-group .login .forget-pass .txtforgetpass{
+	color: #1877f2;
+	font-size: 17px;
+	font-weight: 600;
+	text-decoration: none;
+
+}
+.right-group .login .forget-pass .txtforgetpass:hover{
+	cursor: pointer;
+	text-decoration: underline;
+}
+.line{
+	align-items: center;
+    border-bottom: 1px solid #dadde1;
+    display: flex;
+    margin: 20px 16px;
+    text-align: center;
+}
+.right-group .login .new-account{
+	text-align: center;
+	border: none;
+	border-radius: 6px;
+	padding: 15px;
+	width: 50%;
+    height: 28px;
+    display: inline-block;
+    text-decoration: none;
+    background-color: #42b72a;
+    font-size: 19px;
+    font-weight: bolder;
+    color: white;
+    margin-left: 110px;
+    transition:0.5s;
+}
+.right-group .login .new-account:hover{
+	cursor: pointer;
+	background-color: #90EE90;
+}
+
+/*footer*/
+#footer{
+	color: #737373;
+	padding-top: 7px;
+}
+#footer .listpage-top ,
+#footer .footerChildren .listpage-bottom{
+	text-align: center;
+	margin-left: 20px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#footer .listpage-top li
+{
+	list-style-type: none;
+	margin: 2px;
+	padding: 2px;
+}
+#footer .listpage-top li a,
+#footer .footerChildren .listpage-bottom li a{
+	font-size: 14px;
+	color: #737373;
+	text-decoration: none;
+	font-family: 'PT Sans Narrow', sans-serif;
+
+}
+#footer .listpage-top li a:hover{
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+#footer .ContentCurve{
+	border-bottom: 1px solid #dddfe2;
+	font-size: 1px;
+	height: 8px;
+	margin: 0;
+	padding: 0;
+}
+
+#footer .footerChildren{
+    display: block;
+}
+#footer .footerChildren .listpage-bottom li{
+	list-style-type: none;
+	padding: 5px;
+}
+.copyright{
+	margin-left: 60px;
+	font-size: 14px;
+}
