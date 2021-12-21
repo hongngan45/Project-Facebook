@@ -91,12 +91,12 @@ border: gray;
    
 }
 #sidebar{
-    margin-top: 60px;
+    padding-top: 60px;
     background-color: rgb(255, 255, 255);
     width: 22%;
     border: 1px solid white;
     float: left;
-    overflow-y: scroll;
+    overflow:scroll;
     
    
     
@@ -108,7 +108,9 @@ border: gray;
     align-items: center;
     box-sizing: border-box;
     margin-left: 4px;
-    
+    overflow-x:hidden;
+    overflow-y:auto;
+    padding-top: 5px;
    
      
     
