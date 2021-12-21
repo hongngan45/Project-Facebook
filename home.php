@@ -271,11 +271,125 @@
         </div>
         <!--Phần thông tin bài đăng-->
        <div class="main">
+           <div >
+            
+           </div>
 
        </div>
 
         <!--Phần số người hoạt động-->
         <div class="people-active" >
+            <div id="people-right">
+                <h4>Người liên hệ</h4>
+                <span class="material-icons">
+                    video_call
+                </span>
+                <span class="material-icons">
+                    search
+                </span>
+                <span class="material-icons">
+                    more_horiz
+                </span>
+            </div>
+
+            <ul style="list-style-type: none;">
+                <li>
+                    <img  src="img/user.png" alt="">
+                    <p>Phạm Nguyễn Hải Nam</p>
+                </li>
+                <li>
+                    <img  src="img/user.png" alt="">
+                    <p>Phạm Nguyễn Hải Nam</p>
+                </li>
+                <li>
+                    <img  src="img/user.png" alt="">
+                    <p>Phạm Nguyễn Hải Nam</p>
+                </li>
+                <li>
+                    <img  src="img/user.png" alt="">
+                    <p>Phạm Nguyễn Hải Nam</p>
+                </li>
+                <li>
+                    <img  src="img/user.png" alt="">
+                    <p>Phạm Nguyễn Hải Nam</p>
+                </li>
+                <li>
+                    <img  src="img/user.png" alt="">
+                    <p>Phạm Nguyễn Hải Nam</p>
+                </li>
+                <li> 
+                    <img  src="img/user.png" alt="">
+                    <p>Phạm Nguyễn Hải Nam</p>
+                </li>
+                <li>
+                    <img  src="img/user.png" alt="">
+                    <p>Phạm Nguyễn Hải Nam</p>
+                </li>
+                <li>
+                    <img  src="img/user.png" alt="">
+                    <p>Phạm Nguyễn Hải Nam</p>
+                </li>
+                <li> 
+                    <img  src="img/user.png" alt="">
+                    <p>Phạm Nguyễn Hải Nam</p>
+                </li>
+                <li>
+                    <img  src="img/user.png" alt="">
+                    <p>Phạm Nguyễn Hải Nam</p>
+                </li>
+                <li>
+                    <img  src="img/user.png" alt="">
+                    <p>Phạm Nguyễn Hải Nam</p>
+                </li>
+                <li>
+                    <img  src="img/user.png" alt="">
+                    <p>Phạm Nguyễn Hải Nam</p>
+                </li>
+                <li>
+                    <img  src="img/user.png" alt="">
+                    <p>Phạm Nguyễn Hải Nam</p>
+                </li>
+                <li>
+                    <img  src="img/user.png" alt="">
+                    <p>Phạm Nguyễn Hải Nam</p>
+                </li>
+                <li>
+                    <img  src="img/user.png" alt="">
+                    <p>Phạm Nguyễn Hải Nam</p>
+                </li>
+                <li>
+                    <img  src="img/user.png" alt="">
+                    <p>Phạm Nguyễn Hải Nam</p>
+                </li>
+                <li>
+                    <img  src="img/user.png" alt="">
+                    <p>Phạm Nguyễn Hải Nam</p>
+                </li>
+                <li>
+                    <img  src="img/user.png" alt="">
+                    <p>Phạm Nguyễn Hải Nam</p>
+                </li>
+                <li>
+                    <img  src="img/user.png" alt="">
+                    <p>Phạm Nguyễn Hải Nam</p>
+                </li>
+                <li>
+                    <img  src="img/user.png" alt="">
+                    <p>Phạm Nguyễn Hải Nam</p>
+                </li>
+                <li>
+                    <img  src="img/user.png" alt="">
+                    <p>Phạm Nguyễn Hải Nam</p>
+                </li>
+                <li>
+                    <img  src="img/user.png" alt="">
+                    <p>Phạm Nguyễn Hải Nam</p>
+                </li>
+                <li>
+                    <img  src="img/user.png" alt="">
+                    <p>Phạm Nguyễn Hải Nam</p>
+                </li>
+            </ul>
             
         </div>
 
