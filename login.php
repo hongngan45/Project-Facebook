@@ -1,3 +1,38 @@
+<?php
+session_start();
+      include("connect.php");
+      include("processlogin.php");
+
+      $email = "";
+      $password = "";
+  
+
+      if($_SERVER['REQUEST_METHOD'] == 'POST'){
+      	$login = new Login();
+      	$result=$login->evaluate($_POST);
+
+      	if($result != ""){
+
+      		echo"<div style='text-align:center;font-size:12px;color:white;background-color:grey;'>";
+      		echo "The following errors occured<br><br>";
+      		echo $result;
+      		echo"</div>";
+
+      	}else{
+             header("Location: home.php");
+             die;
+      	}
+
+      $email = $_POST['email'];
+      $password = $_POST['password'];
+      
+
+      }
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="vi" id="facebook" >
 <head>
@@ -22,11 +57,11 @@
 			</div>
 			<div class="right-group">
 				<div class="login">
-					<form>
-						<input type="text" name="email" class="inputTxt" id="email" placeholder="Email hoặc số điện thoại" autofocus="1" aria-label="Email hoặc số điện thoại">
+					<form method="post" action="">
+						<input value="<?php echo $email ?>" type="text" name="email" class="inputTxt" id="email" placeholder="Email hoặc số điện thoại" autofocus="1" aria-label="Email hoặc số điện thoại">
 					
-						<input type="password" name="pass" class="inputPass" id="Pass" placeholder="Password" aria-label="Password" >
-						<button value="1" class="btn-signin " type="submit" name="btnSignIn"><a>Đăng Nhập</a></button>
+						<input value="<?php echo $password ?>" type="password" name="password" class="inputPass" id="Pass" placeholder="Password" aria-label="Password" >
+						<button  class="btn-signin " type="submit" name="btnSignIn" value="Login"><a>Đăng Nhập</a></button>
 					
 					</form>
 					<div class="forget-pass">
@@ -34,7 +69,7 @@
 					</div>
 					<div class="line"></div>
 					
-					<a href="signup.html" class="new-account">Tạo tài khoản</a>
+					<a href="signup.php" class="new-account">Tạo tài khoản</a>
 				</div>
 				
 			</div>

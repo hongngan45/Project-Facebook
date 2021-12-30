@@ -1,3 +1,34 @@
+<?php
+  session_start();
+ 
+
+  include("connect.php");
+      include("processlogin.php");
+
+      if(isset($_SESSION['mybook_userid']) && is_numeric($_SESSION['mybook_userid']))
+      {
+        $id = $_SESSION['mybook_userid'];
+        $login = new Login();
+        $result = $login-> check_login($id);
+
+
+        if($result)
+        {
+               
+        }else {
+            header("Location: login.php");
+            die;
+        }
+      }
+      else
+      {
+        header("Location: login.php");
+        die;
+      }
+     
+
+?>
+
 <!DOCTYPE html>
 <html lang="en" id="facebook">
 <head>
@@ -214,49 +245,14 @@
                                 <input type="text" placeholder="Tìm Kiếm trong Messenger ">
                             </div>
                         
-                            <div class="header-right-list-item-dropdown-content-item">
-                                <div class="header-right-list-item-dropdown-content-item-avatar">
-                                    <img src="img/avt-user/user-trang.jpg" alt="">
-                                </div>
-                                <div class="header-right-list-item-dropdown-content-item-mes">
-                                    <div class="header-right-list-item-dropdown-content-item-mes-nameclass">Trịnh T.Huyền Trang</div>
-                                    <div class="header-right-list-item-dropdown-content-item-mes-content">Hong Ngan xinh dep</div>
-                                </div>
-                            </div>
-                            <div class="header-right-list-item-dropdown-content-item">
-                                <div class="header-right-list-item-dropdown-content-item-avatar">
-                                    <img src="img/avt-user/user-anh.jpg" alt="">
-                                </div>
-                                <div class="header-right-list-item-dropdown-content-item-mes">
-                                    <div class="header-right-list-item-dropdown-content-item-mes-nameclass">Dương Ngọc Ánh</div>
-                                    <div class="header-right-list-item-dropdown-content-item-mes-content">Hong Ngan mãi xinh đẹp</div>
-                                </div>
-                            </div>
-                            <div class="header-right-list-item-dropdown-content-item">
-                                <div class="header-right-list-item-dropdown-content-item-avatar">
-                                    <img src="img/avt-user/user-phuong.jpg" alt="">
-                                </div>
-                                <div class="header-right-list-item-dropdown-content-item-mes">
-                                    <div class="header-right-list-item-dropdown-content-item-mes-nameclass">Ngô Minh Phượng</div>
-                                    <div class="header-right-list-item-dropdown-content-item-mes-content">Hong Ngan thật xinh đẹp</div>
-                                </div>
-                            </div>
-                            <div class="header-right-list-item-dropdown-content-item">
-                                <div class="header-right-list-item-dropdown-content-item-avatar">
-                                    <img src="img/avt-user/user-hue.jpg" alt="">
-                                </div>
-                                <div class="header-right-list-item-dropdown-content-item-mes">
-                                    <div class="header-right-list-item-dropdown-content-item-mes-nameclass">Diệu Huế</div>
-                                    <div class="header-right-list-item-dropdown-content-item-mes-content">Hong ngan tuỵt zờiii</div>
-                                </div>
-                            </div>
+                          
                             <div class="header-right-list-item-dropdown-content-item">
                                 <div class="header-right-list-item-dropdown-content-item-avatar">
                                     <img src="img/avt-user/user-one.jpg" alt="">
                                 </div>
                                 <div class="header-right-list-item-dropdown-content-item-mes">
                                     <div class="header-right-list-item-dropdown-content-item-mes-nameclass">Mạnh Nguyễn</div>
-                                    <div class="header-right-list-item-dropdown-content-item-mes-content">Cho chép nè</div>
+                                    <div class="header-right-list-item-dropdown-content-item-mes-content">hongngan xinhdep</div>
                                 </div>
                             </div>
                             <div class="header-right-list-item-dropdown-content-item">
@@ -317,7 +313,7 @@
                               </div>
                               <div class="header-right-list-item-dropdown2-content-item-content">
                                  
-                                  <div class="header-right-list-item-dropdown2-content-item-content-text"> <span style="font-weight: 600; color: white;">Vũ</span>đã thích bài viết của bạn</div>
+                                  <div class="header-right-list-item-dropdown2-content-item-content-text"> <span style="font-weight: 600; color: white;">Tuan Anh</span>đã thích bài viết của bạn</div>
                               </div>
                           </div>
                           <div class="header-right-list-item-dropdown2-content-item">
@@ -738,9 +734,9 @@
             <div class="main-mid-newslist-item-content">
                Mỗi năm có 4 mùa , mùa xuân , mùa hạ , mùa thu và mua All I Want For Christmas Is You 
             </div>
-            <!-- <div class="main-mid-newslist-item-picture">
+            <div class="main-mid-newslist-item-picture">
                 <img src="img/picture/beach.jpg" alt=" a beach">
-            </div> -->
+            </div> 
             <div class="main-mid-newslist-item-comment">
                 <div class="main-mid-newslist-item-comment-top">
                     <div class="main-mid-newslist-item-comment-top-number_tym">Bảo ngọc+8,4K like</div>
@@ -846,7 +842,7 @@
             </div>
             <div class="main-mid-newslist-item-comment">
                 <div class="main-mid-newslist-item-comment-top">
-                    <div class="main-mid-newslist-item-comment-top-number_tym"></div>
+                    <div class="main-mid-newslist-item-comment-top-number_tym">8.304 like</div>
                     <div class="double">
                       <div class="main-mid-newslist-item-comment-top-number_tym">253 bình luận</div>
                       <div class="main-mid-newslist-item-comment-top-number_tym"> &emsp; 245 Lượt Chia Sẻ</div>
@@ -919,7 +915,7 @@
                |Phim: Happniess
             </div>
             <div class="main-mid-newslist-item-picture">
-                <video controls autoplay>
+                <video controls >
                     <source src="img/avt-user/user-video-happyness.mp4">
                     </video>
             </div>
@@ -998,7 +994,7 @@
                |Phim: Happniess
             </div>
             <div class="main-mid-newslist-item-picture">
-                <video controls autoplay>
+                <video controls >
                     <source src="img/avt-user/user-video-happyness.mp4">
                     </video>
             </div>
@@ -1077,7 +1073,7 @@
                |Phim: Happniess
             </div>
             <div class="main-mid-newslist-item-picture">
-                <video controls autoplay>
+                <video controls >
                     <source src="img/avt-user/user-video-happyness.mp4">
                     </video>
             </div>
@@ -1156,7 +1152,7 @@
                |Phim: Happniess
             </div>
             <div class="main-mid-newslist-item-picture">
-                <video controls autoplay>
+                <video controls >
                     <source src="img/avt-user/user-video-happyness.mp4">
                     </video>
             </div>
@@ -1633,7 +1629,7 @@
               <div class="main-mid-right-Time-item-birthday">
                   <div class="main-mid-right-Time-item-birthday-text">Sinh nhật</div>
                       <div class="main-mid-right-Time-item-birthday-user">
-                        <i class="bi bi-gift-fill">Hôm nay là sinh nhật của <span>Vũ và những người khác </span></i>
+                        <i class="bi bi-gift-fill">Hôm nay là sinh nhật của <span>Hong Ngan và những người khác </span></i>
                       </div>
               </div>
 
