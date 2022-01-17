@@ -269,7 +269,7 @@
 <div style="position:absolute; left:43%; top:3.8%; z-index:1;">
 
 	<tr>
-		<td>  <img style="border-radius: 50%; width: 32%;height: 0%"  src="../../fb_users/<?php echo $v_gender; ?>/<?php echo $v_email; ?>/Profile/<?php echo $profile_img; ?>" style="height:150; width:150;" onClick="open_profile_photo()">  </td>
+		<td>  <img style="border-radius: 50%; width: 100%;height: 70%"  src="../../fb_users/<?php echo $v_gender; ?>/<?php echo $v_email; ?>/Profile/<?php echo $profile_img; ?>" style="height:150; width:150;" onClick="open_profile_photo()">  </td>
 	</tr>
 </div>
 <div style="position:absolute; left:45%; top:7%; z-index:1;">

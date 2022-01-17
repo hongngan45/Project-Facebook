@@ -37,7 +37,7 @@ CREATE TABLE `admin_info` (
 --
 
 INSERT INTO `admin_info` (`Username`, `Password`) VALUES
-('Hong Ngan', '123456123456');
+('98d34c1758b15b5a359b69c2b08c5767', '98d34c1758b15b5a359b69c2b08c5767');
 
 -- --------------------------------------------------------
 

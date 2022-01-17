@@ -232,7 +232,7 @@ if(isset($_POST['file2']) && ($_POST['file2']=='Upload'))
 		
 		
 		<li class="header-right-list-item dropbtn">
-                    <a href="../fb_home/Group_Message.php"><i class="bi bi-messenger"></i></a>
+                    <a><i class="bi bi-messenger"></i></a>
                     <div class="header-right-list-item-number">7</div>
 
                        <div class="header-right-list-item-hover-dropdown">Messenger</div>
@@ -292,8 +292,8 @@ if(isset($_POST['file2']) && ($_POST['file2']=='Upload'))
         <div style="position:fixed; left:85.8%; top:18%; z-index:3;"> <a href="../fb_profile/photos.php"> <img src="img/photo&video.PNG" onMouseOver="head_photos_over()" onMouseOut="head_photos_out()"> </a> </div>
 <div style="position:fixed; left:88.2%; top:17%; z-index:3;"><a href="../fb_profile/photos.php" style="text-decoration:none; color:#000;" id="head_photos" onMouseOver="head_photos_over()" onMouseOut="head_photos_out()"><h4>Photos</h4></a></div>
 
-	<div style="position:fixed; left:85.8%; top:23%; z-index:3;"> <a href="../fb_home/Settings.php"> <img src="img/settings2.png" height="25" width="23" onMouseOver="head_settings_over()" onMouseOut="head_settings_out()"> </a> </div>
-<div style="position:fixed; left:88.2%; top:22%; z-index:3;"><a href="../fb_home/Settings.php" style="text-decoration:none; color:#000;" id="head_settings" onMouseOver="head_settings_over()" onMouseOut="head_settings_out()"><h4> Account Settings </h4></a></div>
+	<div style="position:fixed; left:85.8%; top:23%; z-index:3;"> <a href="Settings.php"> <img src="img/settings2.png" height="25" width="23" onMouseOver="head_settings_over()" onMouseOut="head_settings_out()"> </a> </div>
+<div style="position:fixed; left:88.2%; top:22%; z-index:3;"><a href="Settings.php" style="text-decoration:none; color:#000;" id="head_settings" onMouseOver="head_settings_over()" onMouseOut="head_settings_out()"><h4> Account Settings </h4></a></div>
 
 
 
@@ -400,7 +400,7 @@ if(isset($_POST['file2']) && ($_POST['file2']=='Upload'))
 <div style="position:absolute; left:43%; top:3.8%; z-index:1;">
 
 	<tr>
-		<td>  <img style="border-radius: 50%; width: 22%;height: 22%" src="../../fb_users/<?php echo $gender; ?>/<?php echo $user; ?>/Profile/<?php echo $img; ?>" style="height:240; width:200;" onMouseOver="dis_pro_pic_edit();" onMouseOut="out_pro_pic_edit();" onClick="open_profile_photo()">  </td>
+		<td>  <img style="border-radius: 50%; width: 28%;height: 28%" src="../../fb_users/<?php echo $gender; ?>/<?php echo $user; ?>/Profile/<?php echo $img; ?>" style="height:240; width:200;" onMouseOver="dis_pro_pic_edit();" onMouseOut="out_pro_pic_edit();" onClick="open_profile_photo()">  </td>
 	</tr>
 </div>
 <div style="position:absolute; left:45%; top:6.1%; z-index:1;">
