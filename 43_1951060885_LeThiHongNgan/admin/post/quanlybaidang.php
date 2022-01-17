@@ -11,13 +11,10 @@
   <!-- Font-icon css-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
   <!-- or -->
-  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
-  <link rel="stylesheet" type="text/css"
-    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-     <link rel="stylesheet" href="icon/fontawesome-free-5.15.3-web/css/all.min.css">
+ 
      
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
         <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
@@ -26,7 +23,6 @@
  
   
 </head>
-
 <body class="app sidebar-mini rtl">
   <style>
     .Choicefile {
@@ -45,59 +41,11 @@
       justify-content: center;
     }
 
-    .Choicefile:hover {
-      text-decoration: none;
-      color: white;
-    }
 
-    #uploadfile,
-    .removeimg {
-      display: none;
-    }
 
-    #thumbbox {
-      position: relative;
-      width: 100%;
-      margin-bottom: 20px;
-    }
-
-    .removeimg {
-      height: 25px;
-      position: absolute;
-      background-repeat: no-repeat;
-      top: 5px;
-      left: 5px;
-      background-size: 25px;
-      width: 25px;
-      /* border: 3px solid red; */
-      border-radius: 50%;
-
-    }
-
-    .removeimg::before {
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box;
-      content: '';
-      border: 1px solid red;
-      background: red;
-      text-align: center;
-      display: block;
-      margin-top: 11px;
-      transform: rotate(45deg);
-    }
-
-    .removeimg::after {
-      /* color: #FFF; */
-      /* background-color: #DC403B; */
-      content: '';
-      background: red;
-      border: 1px solid red;
-      text-align: center;
-      display: block;
-      transform: rotate(-45deg);
-      margin-top: -2px;
-    }
+  
   </style>
+ 
   <!-- Navbar-->
   <header class="app-header">
     <!-- Sidebar toggle button--><a class="app-sidebar__toggle" href="#" data-toggle="sidebar"
@@ -206,11 +154,9 @@ MODAL
 
 
 
-  <script src="js/jquery-3.2.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/main.js"></script>
-  <script src="js/plugins/pace.min.js"></script>
+
+
+ 
  
 </body>
 
