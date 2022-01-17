@@ -73,7 +73,7 @@
 </head>
 <body>
 	
-	<div style="position:absolute; left:25%; top:1%;"> <img src="img/group.png" height="100" width="100"> </div>
+
 	<div style="position:absolute; left:35%; top:1.2%;"> <h1 style="color:#3B59A4;"> Group Chat </h1> </div>
   
     <div style=" background:#FFF; position:absolute; left:25%; top:2%; height:21%; width:41.4%; z-index:-1; box-shadow:0px 2px 5px 1px rgb(0,0,0);"> </div>
