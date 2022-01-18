@@ -15,7 +15,10 @@
 
 <div style="position:absolute;left:17.2%; top:6.5%; font-weight:bold; z-index:1;color: #b0b3b8;"> <a href="view_profile.php?id=<?php echo $v_user_id; ?>" style="text-decoration:none; color:#b0b3b8;" onMouseOver="on_timeline_txt();" onMouseOver="on_timeline_txt();" onMouseOut="out_timeline_txt();"> Bài viết </a> </div>
 
+
 <div style="position:absolute;left:23%; top:6.5%; font-weight:bold; z-index:1;"> <a href="about.php?id=<?php echo $v_user_id; ?>" style="text-decoration:none; color:#b0b3b8;" onMouseOver="on_about_txt();" onMouseOut="out_about_txt();"> About </a>  </div>
+
+<div style="position:absolute;left:29%; top:6.5%; font-weight:bold; z-index:1;"> <a  style="text-decoration:none; color:#b0b3b8; "> Bạn bè </a>  </div>
 <div style="position:absolute;left:34%; top:6.5%; font-weight:bold; z-index:1; color:#b0b3b8;"> Photos  <samp style="color:#717171;"> <?php echo $photos_count; ?> </samp> </div>
 <div style="position:absolute;left:40%; top:6.5%; font-weight:bold; z-index:1;"> <a  style="text-decoration:none; color:#b0b3b8;"> Xem thêm </a>  </div>
 <div style="position:absolute;left:53%; top:6.5%; font-weight:bold; z-index:1;"> <a  style="text-decoration:none; color:#b0b3b8;"> Thêm Vào tin </a>  </div>
